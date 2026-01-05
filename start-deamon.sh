@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 查找进程PID
-pid=$(pgrep DeamonName)
+pid=$(pgrep -f DeamonName)
 
 # 判断PID是否为空
 if [ -z "$pid" ]; then
